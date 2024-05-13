@@ -2,7 +2,7 @@ const express = require("express");
 const users = require("./MOCK_DATA.json");
 const { status } = require("express/lib/response");
 const app = express();
-const PORT = 8000;
+const PORT = 8080;
 
 
 //middlewares
