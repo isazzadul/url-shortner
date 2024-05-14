@@ -1,6 +1,6 @@
 const express = require("express");
 const db = require("./config/db");
-const urlRouter = require("./routes/urlCreator");
+const urlRouter = require("./routes/url");
 const users = require("./MOCK_DATA.json");
 const { status } = require("express/lib/response");
 const app = express();
