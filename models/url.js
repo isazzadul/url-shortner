@@ -1,0 +1,5 @@
+class url{
+    constructor(){
+
+    }
+}
