@@ -47,7 +47,7 @@ The URL Shortener API is a simple service that generates short IDs for long URLs
 
 ### 1. Shorten URL
 
-- **Endpoint:** `POST /shorten`
+- **Endpoint:** `POST _/api/url-shortner`
 - **Description:** Shortens a long URL and returns a unique short ID.
 - **Request Body:**
     ```json
@@ -64,7 +64,7 @@ The URL Shortener API is a simple service that generates short IDs for long URLs
 
 ### 2. Retrieve Original URL
 
-- **Endpoint:** `GET /:shortID`
+- **Endpoint:** `GET _/api/url-shortner/:shortID`
 - **Description:** Retrieves the original long URL associated with the given short ID.
 - **Response:**
     - Redirects to the original long URL if found.
@@ -72,5 +72,5 @@ The URL Shortener API is a simple service that generates short IDs for long URLs
 
 ## Usage
 
-1. Send a `POST` request to `/shorten` with a JSON body containing the long URL.
+1. Send a `POST` request to `/api/url-shortner` with a JSON body containing the long URL.
 2. Use the returned short ID to access the original URL via `GET`.

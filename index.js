@@ -17,7 +17,7 @@ var sqlq = "INSERT INTO `url`( `shortID`, `refURL`) VALUES ('hello','google.com'
 // db.createQuery("select 1");
 
 //routes
-app.use("/url",urlRouter);
+app.use("/api/url-shortner",urlRouter);
 
 
 app.listen(PORT,()=> console.log("Server started successfully at port "+PORT));
