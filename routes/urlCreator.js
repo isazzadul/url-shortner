@@ -6,5 +6,7 @@ router.route("/")
     .post(urlController.createURL)
     .get(urlController.getAllURL);
 
+router.get('/:id',urlController.redirectURL);
+
 
 module.exports = router;
