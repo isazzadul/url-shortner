@@ -17,6 +17,7 @@ getAllURL = async (req, res, next) => {
         res.send(err);
     }
 }
+
 redirectURL = async (req, res, next) => {
     const id = req.params.id;
     const url = await urlModel.redirectUrl(id);

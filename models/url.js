@@ -14,7 +14,7 @@ async function postUrl(url){
 }
 async function redirectUrl(id){
     const [url] = await db.execute(`SELECT refURL FROM url WHERE shortID = '${id}' `);
-    console.log(url);
+    console.log(url.json());
     return url[0].refURL ;
 }
 
